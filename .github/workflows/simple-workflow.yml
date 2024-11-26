@@ -1,0 +1,14 @@
+name: simple-workflow
+
+on:
+  schedule:
+#    - cron: 0 * * * *
+
+jobs:
+  main_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display downloading text
+        run: echo "Récupération du code source"
+      - name: Display checking text
+        run: echo "Vérification terminée"
